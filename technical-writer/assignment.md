@@ -54,7 +54,7 @@ kubectl get pods --all-namespaces
 
 ## Review Logs for a Pod
 
-Normally, your application outputs print statements or error messages to the console (`stdout`). In Kubernetes, those messages are captured and logged to the Pod's container. This helps with debugging, since you can review specific containers to identify which one is raising an error.
+Normally, your application outputs print statements or error messages directly to the console (`stdout`). In Kubernetes, the Pod's container captures and logs these messages. This helps with debugging, since you can review specific containers to identify which one is raising an error.
 
 To display a container's logs, use the `kubectl logs` command. If your Pod only has one container, simply add the Pod's name:
 
